@@ -169,15 +169,15 @@ void JointData::SetValue(int id, int value)
     if (id==21)
     {
 	m_Value[id] = value;
-	//printf("Value=%d\n", value);
-	m_Angle[id] = AXDXL::Value22Angle(value);
+	printf("Value=%d\n", value);
+	//m_Angle[id] = AXDXL::Value22Angle(value);
 	//printf("Angle=%0.4f\n", m_Angle[21]);
     }
     else if(id==22)
 	{
 		m_Value[id] = value;
 		//printf("%d\n", m_Value[id]);
-		m_Angle[id] = AXDXL::Value22Angle(value);
+		//m_Angle[id] = AXDXL::Value22Angle(value);
 	}
 	    else
 	    {

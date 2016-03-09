@@ -1102,10 +1102,7 @@ void PlayCmd(ArbotixPro *arbotixpro, int pageNum)
 							if (arbotixpro->ReadWord(id, AXDXL::P_GOAL_POSITION_L, &value, 0) == ArbotixPro::SUCCESS)
 							{
 								MotionStatus::m_CurrentJoints.SetValue(id, value);
-								if (id==2)
-								{
-									printf("Value================================================================%d\n", value);
-								}
+								
 							}
 							//printf("%d\n", id);
 						}
